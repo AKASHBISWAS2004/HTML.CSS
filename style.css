@@ -818,3 +818,180 @@ footer .end span{
     background: #fac031;
     border-radius: 15px;
 }
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+/* Tablet */
+@media (max-width: 992px){
+
+    section,
+    .about,
+    .review,
+    .order,
+    .team{
+        height: auto;
+    }
+
+    section .main,
+    .about .about_main,
+    .order .order_main{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section .main .main_image img,
+    .about .about_main .image img,
+    .order .order_main .order_image img{
+        width: 90%;
+        left: 0;
+        top: 0;
+    }
+
+    section p,
+    .about .about_main .about_text p{
+        width: 90%;
+        left: 0;
+        bottom: 0;
+        margin:20px auto;
+    }
+
+    .menu .menu_box{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .gallary .gallary_image_box{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .review .review_box{
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+
+    .team .team_box{
+        flex-wrap: wrap;
+        top:0;
+    }
+
+    footer .footer_main{
+        grid-template-columns: repeat(2,1fr);
+        gap:30px;
+    }
+
+    .order .order_main form{
+        grid-template-columns:1fr;
+    }
+
+    .order .order_main form .input input{
+        width:100%;
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width:768px){
+
+    section nav{
+        flex-direction:column;
+        padding:10px;
+    }
+
+    section nav ul{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    section nav ul li{
+        margin:8px 0;
+    }
+
+    section .main{
+        top:160px;
+    }
+
+    section .main .men_text h1{
+        font-size:36px;
+        left:0;
+        top:0;
+    }
+
+    section .main .men_text h1 span{
+        font-size:42px;
+    }
+
+    .menu .menu_box{
+        grid-template-columns:1fr;
+    }
+
+    .menu .menu_box .menu_card{
+        width:95%;
+        margin:auto;
+    }
+
+    .menu .menu_box .menu_card .menu_image{
+        width:95%;
+    }
+
+    .gallary .gallary_image_box{
+        grid-template-columns:1fr;
+    }
+
+    .review .review_box{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .review .review_box .review_card{
+        width:95%;
+        margin:15px 0;
+        height:auto;
+    }
+
+    .team .team_box{
+        flex-direction:column;
+    }
+
+    .team .team_box .profile{
+        margin:20px 0;
+    }
+
+    footer .footer_main{
+        grid-template-columns:1fr;
+    }
+
+    .order .order_main form{
+        width:95%;
+    }
+
+    .order .order_main form .order_btn{
+        width:100%;
+    }
+
+}
+
+
+/* Small Mobile */
+@media (max-width:480px){
+
+    section .main .men_text h1{
+        font-size:28px;
+    }
+
+    .menu h1,
+    .about h1,
+    .gallary h1,
+    .review h1,
+    .order h1,
+    .team h1{
+        font-size:35px;
+    }
+
+    .menu .menu_box .menu_card{
+        width:100%;
+    }
+
+}
